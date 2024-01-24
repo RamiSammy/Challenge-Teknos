@@ -10,5 +10,7 @@ const routes = require("./src/routes/index.routes");
 app.use("/", routes);
 
 app.listen(port, function () {
-  console.log("Servidor corriendo en el puerto ${port}");
+  console.log(
+    `Servidor corriendo en el puerto ${port} -> http://localhost:${port}/`
+  );
 });
